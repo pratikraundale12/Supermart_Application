@@ -1,0 +1,17 @@
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\bin\Debug\net8.0-windows\SuperMart_App.exe
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\bin\Debug\net8.0-windows\SuperMart_App.deps.json
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\bin\Debug\net8.0-windows\SuperMart_App.runtimeconfig.json
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\bin\Debug\net8.0-windows\SuperMart_App.dll
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\bin\Debug\net8.0-windows\SuperMart_App.pdb
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\obj\Debug\net8.0-windows\SuperMart_App.Form1.resources
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\obj\Debug\net8.0-windows\SuperMart_App.Properties.Resources.resources
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\obj\Debug\net8.0-windows\SuperMart_App.csproj.GenerateResource.cache
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\obj\Debug\net8.0-windows\SuperMart_App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\obj\Debug\net8.0-windows\SuperMart_App.AssemblyInfoInputs.cache
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\obj\Debug\net8.0-windows\SuperMart_App.AssemblyInfo.cs
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\obj\Debug\net8.0-windows\SuperMart_App.csproj.CoreCompileInputs.cache
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\obj\Debug\net8.0-windows\SuperMart_App.dll
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\obj\Debug\net8.0-windows\refint\SuperMart_App.dll
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\obj\Debug\net8.0-windows\SuperMart_App.pdb
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\obj\Debug\net8.0-windows\SuperMart_App.genruntimeconfig.cache
+C:\Users\prati\source\repos\SuperMart_App\SuperMart_App\obj\Debug\net8.0-windows\ref\SuperMart_App.dll
