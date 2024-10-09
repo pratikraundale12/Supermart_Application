@@ -112,7 +112,7 @@
             button1.TabIndex = 6;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            button1.Click += button1_Click_1;
             // 
             // label3
             // 
@@ -127,11 +127,13 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Select Role", "Admin", "Saller" });
+            comboBox1.Items.AddRange(new object[] { "Select Role", "Admin", "Seller" });
             comboBox1.Location = new Point(103, 61);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(262, 33);
             comboBox1.TabIndex = 4;
+            comboBox1.Text = "Select Role";
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged_1;
             // 
             // label2
             // 
@@ -167,6 +169,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(262, 31);
             textBox1.TabIndex = 0;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // groupBox3
             // 
