@@ -32,11 +32,11 @@
             groupBox3 = new GroupBox();
             SuperMart = new Label();
             groupBox2 = new GroupBox();
-            textBox3 = new TextBox();
+            txtPhone = new TextBox();
             label4 = new Label();
-            textBox2 = new TextBox();
+            txtAge = new TextBox();
             label3 = new Label();
-            textBox1 = new TextBox();
+            txtPass = new TextBox();
             label2 = new Label();
             lblSellerID = new Label();
             txtSellerName = new TextBox();
@@ -75,11 +75,11 @@
             // 
             groupBox2.BackgroundImage = (Image)resources.GetObject("groupBox2.BackgroundImage");
             groupBox2.CausesValidation = false;
-            groupBox2.Controls.Add(textBox3);
+            groupBox2.Controls.Add(txtPhone);
             groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(textBox2);
+            groupBox2.Controls.Add(txtAge);
             groupBox2.Controls.Add(label3);
-            groupBox2.Controls.Add(textBox1);
+            groupBox2.Controls.Add(txtPass);
             groupBox2.Controls.Add(label2);
             groupBox2.Controls.Add(lblSellerID);
             groupBox2.Controls.Add(txtSellerName);
@@ -94,12 +94,12 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Add New Seller";
             // 
-            // textBox3
+            // txtPhone
             // 
-            textBox3.Location = new Point(174, 157);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(351, 31);
-            textBox3.TabIndex = 17;
+            txtPhone.Location = new Point(174, 157);
+            txtPhone.Name = "txtPhone";
+            txtPhone.Size = new Size(351, 31);
+            txtPhone.TabIndex = 17;
             // 
             // label4
             // 
@@ -111,12 +111,12 @@
             label4.TabIndex = 16;
             label4.Text = "Seller Phone :";
             // 
-            // textBox2
+            // txtAge
             // 
-            textBox2.Location = new Point(174, 106);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(351, 31);
-            textBox2.TabIndex = 15;
+            txtAge.Location = new Point(174, 106);
+            txtAge.Name = "txtAge";
+            txtAge.Size = new Size(351, 31);
+            txtAge.TabIndex = 15;
             // 
             // label3
             // 
@@ -128,12 +128,12 @@
             label3.TabIndex = 14;
             label3.Text = "Seller Age:";
             // 
-            // textBox1
+            // txtPass
             // 
-            textBox1.Location = new Point(174, 214);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(351, 31);
-            textBox1.TabIndex = 13;
+            txtPass.Location = new Point(174, 214);
+            txtPass.Name = "txtPass";
+            txtPass.Size = new Size(351, 31);
+            txtPass.TabIndex = 13;
             // 
             // label2
             // 
@@ -174,6 +174,7 @@
             btnDelete.TabIndex = 8;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnUpdate
             // 
@@ -186,6 +187,7 @@
             btnUpdate.TabIndex = 7;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnAdd
             // 
@@ -223,6 +225,7 @@
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(611, 492);
             dataGridView1.TabIndex = 7;
+            dataGridView1.Click += dataGridView1_Click;
             // 
             // frmAddNewSeller
             // 
@@ -239,6 +242,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Add New Seller";
             Load += frmAddNewSeller_Load;
+            Click += frmAddNewSeller_Click;
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -258,11 +262,11 @@
         private Button btnUpdate;
         private Button btnAdd;
         private Label label1;
-        private TextBox textBox3;
+        private TextBox txtPhone;
         private Label label4;
-        private TextBox textBox2;
+        private TextBox txtAge;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox txtPass;
         private Label label2;
         private DataGridView dataGridView1;
     }
