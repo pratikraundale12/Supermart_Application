@@ -105,14 +105,15 @@
             // adminToolStripMenuItem
             // 
             adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            adminToolStripMenuItem.Size = new Size(167, 34);
+            adminToolStripMenuItem.Size = new Size(270, 34);
             adminToolStripMenuItem.Text = "Admin";
             // 
             // sellerToolStripMenuItem
             // 
             sellerToolStripMenuItem.Name = "sellerToolStripMenuItem";
-            sellerToolStripMenuItem.Size = new Size(167, 34);
+            sellerToolStripMenuItem.Size = new Size(270, 34);
             sellerToolStripMenuItem.Text = "Seller";
+            sellerToolStripMenuItem.Click += sellerToolStripMenuItem_Click;
             // 
             // reportToolStripMenuItem
             // 
@@ -185,6 +186,7 @@
             MinimizeBox = false;
             Name = "frmMain";
             Text = "SuprtMart";
+            FormClosing += frmMain_FormClosing;
             Load += frmMain_Load;
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();

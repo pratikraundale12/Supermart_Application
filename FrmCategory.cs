@@ -182,9 +182,9 @@ namespace SuperMart_App
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(611, 492);
             dataGridView1.TabIndex = 6;
-            dataGridView1.CellClick += dataGridView1_CellClick;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.Click += dataGridView1_Click;
             // 
@@ -237,7 +237,6 @@ namespace SuperMart_App
 
         private void button3_Click(object sender, EventArgs e)
         {
-            // Delete logic
             try
             {
                 if (lblCatID.Text == String.Empty)
@@ -280,7 +279,7 @@ namespace SuperMart_App
             }
         }
 
-        private void btnAddCat_Click(object sender, EventArgs e)
+private void btnAddCat_Click(object sender, EventArgs e)
         {
             if (txtCatName.Text == String.Empty)
             {
@@ -352,11 +351,6 @@ namespace SuperMart_App
 
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void dataGridView1_Click(object sender, EventArgs e)
         {
             btnUpdate.Visible = true;
@@ -368,6 +362,7 @@ namespace SuperMart_App
             txtCatName.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             rtbCatDes.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
         }
+
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -434,7 +429,7 @@ namespace SuperMart_App
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-         
-          }
+
+        }
     }
 }

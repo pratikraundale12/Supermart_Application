@@ -76,5 +76,23 @@ namespace SuperMart_App
             FrmCategory fcat = new();
             fcat.Show();
         }
+
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Do you really want to close this Application ?", "CLOSE", MessageBoxButtons.YesNo, MessageBoxIcon.Stop))
+            {
+                Application.Exit();
+            }
+        }
+
+        private void sellerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             frmAddNewSeller frmAddNewSeller = new frmAddNewSeller();   
+            frmAddNewSeller.ShowDialog();
+        }
     }
 }
