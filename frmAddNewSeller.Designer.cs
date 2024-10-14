@@ -32,11 +32,11 @@
             groupBox3 = new GroupBox();
             SuperMart = new Label();
             groupBox2 = new GroupBox();
-            txtPhone = new TextBox();
-            label4 = new Label();
-            txtAge = new TextBox();
-            label3 = new Label();
             txtPass = new TextBox();
+            label4 = new Label();
+            txtPhone = new TextBox();
+            label3 = new Label();
+            txtAge = new TextBox();
             label2 = new Label();
             lblSellerID = new Label();
             txtSellerName = new TextBox();
@@ -54,32 +54,32 @@
             // 
             groupBox3.BackColor = Color.DodgerBlue;
             groupBox3.Controls.Add(SuperMart);
-            groupBox3.Location = new Point(3, 2);
+            groupBox3.Location = new Point(-185, 1);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(1225, 53);
-            groupBox3.TabIndex = 4;
+            groupBox3.Size = new Size(2021, 59);
+            groupBox3.TabIndex = 5;
             groupBox3.TabStop = false;
+            groupBox3.Enter += groupBox3_Enter;
             // 
             // SuperMart
             // 
             SuperMart.AutoSize = true;
             SuperMart.ForeColor = Color.White;
-            SuperMart.Location = new Point(553, 7);
+            SuperMart.Location = new Point(748, 0);
             SuperMart.Name = "SuperMart";
             SuperMart.Size = new Size(95, 25);
             SuperMart.TabIndex = 6;
             SuperMart.Text = "SuperMart";
-            SuperMart.Click += SuperMart_Click;
             // 
             // groupBox2
             // 
             groupBox2.BackgroundImage = (Image)resources.GetObject("groupBox2.BackgroundImage");
             groupBox2.CausesValidation = false;
-            groupBox2.Controls.Add(txtPhone);
-            groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(txtAge);
-            groupBox2.Controls.Add(label3);
             groupBox2.Controls.Add(txtPass);
+            groupBox2.Controls.Add(label4);
+            groupBox2.Controls.Add(txtPhone);
+            groupBox2.Controls.Add(label3);
+            groupBox2.Controls.Add(txtAge);
             groupBox2.Controls.Add(label2);
             groupBox2.Controls.Add(lblSellerID);
             groupBox2.Controls.Add(txtSellerName);
@@ -87,63 +87,63 @@
             groupBox2.Controls.Add(btnUpdate);
             groupBox2.Controls.Add(btnAdd);
             groupBox2.Controls.Add(label1);
-            groupBox2.Location = new Point(13, 61);
+            groupBox2.Location = new Point(3, 62);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(561, 492);
-            groupBox2.TabIndex = 5;
+            groupBox2.Size = new Size(561, 494);
+            groupBox2.TabIndex = 6;
             groupBox2.TabStop = false;
-            groupBox2.Text = "Add New Seller";
+            groupBox2.Text = "Add Seller";
             // 
-            // txtPhone
+            // txtPass
             // 
-            txtPhone.Location = new Point(174, 157);
-            txtPhone.Name = "txtPhone";
-            txtPhone.Size = new Size(351, 31);
-            txtPhone.TabIndex = 17;
+            txtPass.Location = new Point(177, 274);
+            txtPass.Name = "txtPass";
+            txtPass.Size = new Size(351, 31);
+            txtPass.TabIndex = 17;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Image = (Image)resources.GetObject("label4.Image");
-            label4.Location = new Point(9, 164);
+            label4.Location = new Point(13, 281);
             label4.Name = "label4";
-            label4.Size = new Size(118, 25);
+            label4.Size = new Size(87, 25);
             label4.TabIndex = 16;
-            label4.Text = "Seller Phone :";
+            label4.Text = "Password";
             // 
-            // txtAge
+            // txtPhone
             // 
-            txtAge.Location = new Point(174, 106);
-            txtAge.Name = "txtAge";
-            txtAge.Size = new Size(351, 31);
-            txtAge.TabIndex = 15;
+            txtPhone.Location = new Point(175, 201);
+            txtPhone.Name = "txtPhone";
+            txtPhone.Size = new Size(351, 31);
+            txtPhone.TabIndex = 15;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Image = (Image)resources.GetObject("label3.Image");
-            label3.Location = new Point(9, 113);
+            label3.Location = new Point(11, 208);
             label3.Name = "label3";
-            label3.Size = new Size(95, 25);
+            label3.Size = new Size(62, 25);
             label3.TabIndex = 14;
-            label3.Text = "Seller Age:";
+            label3.Text = "Phone";
             // 
-            // txtPass
+            // txtAge
             // 
-            txtPass.Location = new Point(174, 214);
-            txtPass.Name = "txtPass";
-            txtPass.Size = new Size(351, 31);
-            txtPass.TabIndex = 13;
+            txtAge.Location = new Point(172, 132);
+            txtAge.Name = "txtAge";
+            txtAge.Size = new Size(351, 31);
+            txtAge.TabIndex = 13;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Image = (Image)resources.GetObject("label2.Image");
-            label2.Location = new Point(15, 221);
+            label2.Location = new Point(8, 139);
             label2.Name = "label2";
-            label2.Size = new Size(87, 25);
+            label2.Size = new Size(95, 25);
             label2.TabIndex = 12;
-            label2.Text = "Password";
+            label2.Text = "Seller Age:";
             // 
             // lblSellerID
             // 
@@ -161,46 +161,46 @@
             txtSellerName.Name = "txtSellerName";
             txtSellerName.Size = new Size(351, 31);
             txtSellerName.TabIndex = 10;
-            txtSellerName.TextChanged += txtCatName_TextChanged;
+            txtSellerName.TextChanged += txtCatName_TextChanged_1;
             // 
             // btnDelete
             // 
             btnDelete.BackColor = Color.Red;
             btnDelete.Cursor = Cursors.Hand;
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(409, 325);
+            btnDelete.Location = new Point(409, 355);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(101, 43);
             btnDelete.TabIndex = 8;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
-            btnDelete.Click += btnDelete_Click;
+            btnDelete.Click += btnDelete_Click_1;
             // 
             // btnUpdate
             // 
             btnUpdate.BackColor = Color.Indigo;
             btnUpdate.Cursor = Cursors.Hand;
             btnUpdate.ForeColor = Color.White;
-            btnUpdate.Location = new Point(241, 325);
+            btnUpdate.Location = new Point(241, 355);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(101, 43);
             btnUpdate.TabIndex = 7;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
-            btnUpdate.Click += btnUpdate_Click;
+            btnUpdate.Click += btnUpdate_Click_1;
             // 
             // btnAdd
             // 
             btnAdd.BackColor = Color.SeaGreen;
             btnAdd.Cursor = Cursors.Hand;
             btnAdd.ForeColor = Color.White;
-            btnAdd.Location = new Point(71, 325);
+            btnAdd.Location = new Point(71, 355);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(101, 43);
             btnAdd.TabIndex = 6;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = false;
-            btnAdd.Click += btnAdd_Click;
+            btnAdd.Click += btnAddCat_Click;
             // 
             // label1
             // 
@@ -211,21 +211,23 @@
             label1.Size = new Size(110, 25);
             label1.TabIndex = 2;
             label1.Text = "Seller Name:";
-            label1.Click += label1_Click;
+            label1.Click += label1_Click_1;
             // 
             // dataGridView1
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(579, 61);
+            dataGridView1.Location = new Point(567, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(611, 492);
             dataGridView1.TabIndex = 7;
-            dataGridView1.Click += dataGridView1_Click;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView1.Click += dataGridView1_Click_1;
+            dataGridView1.ChangeUICues += dataGridView1_ChangeUICues;
             // 
             // frmAddNewSeller
             // 
@@ -237,12 +239,10 @@
             Controls.Add(groupBox3);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MaximizeBox = false;
             Name = "frmAddNewSeller";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Add New Seller";
             Load += frmAddNewSeller_Load;
-            Click += frmAddNewSeller_Click;
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -262,12 +262,12 @@
         private Button btnUpdate;
         private Button btnAdd;
         private Label label1;
-        private TextBox txtPhone;
-        private Label label4;
-        private TextBox txtAge;
-        private Label label3;
-        private TextBox txtPass;
-        private Label label2;
         private DataGridView dataGridView1;
+        private TextBox txtPass;
+        private Label label4;
+        private TextBox txtPhone;
+        private Label label3;
+        private TextBox txtAge;
+        private Label label2;
     }
 }

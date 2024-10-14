@@ -91,8 +91,14 @@ namespace SuperMart_App
 
         private void sellerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-             frmAddNewSeller frmAddNewSeller = new frmAddNewSeller();   
+            frmAddNewSeller frmAddNewSeller = new frmAddNewSeller();
             frmAddNewSeller.ShowDialog();
+        }
+
+        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddAdmin aaf = new AddAdmin();
+            aaf.ShowDialog();
         }
     }
 }

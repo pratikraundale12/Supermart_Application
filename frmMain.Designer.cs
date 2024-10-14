@@ -107,6 +107,7 @@
             adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             adminToolStripMenuItem.Size = new Size(270, 34);
             adminToolStripMenuItem.Text = "Admin";
+            adminToolStripMenuItem.Click += adminToolStripMenuItem_Click;
             // 
             // sellerToolStripMenuItem
             // 
