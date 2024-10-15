@@ -45,6 +45,7 @@
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripStatusLabel2 = new ToolStripStatusLabel();
+            addProductToolStripMenuItem = new ToolStripMenuItem();
             groupBox3.SuspendLayout();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
@@ -91,6 +92,7 @@
             // 
             // productToolStripMenuItem
             // 
+            productToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addProductToolStripMenuItem });
             productToolStripMenuItem.Name = "productToolStripMenuItem";
             productToolStripMenuItem.Size = new Size(90, 29);
             productToolStripMenuItem.Text = "Product";
@@ -105,14 +107,14 @@
             // adminToolStripMenuItem
             // 
             adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            adminToolStripMenuItem.Size = new Size(270, 34);
+            adminToolStripMenuItem.Size = new Size(167, 34);
             adminToolStripMenuItem.Text = "Admin";
             adminToolStripMenuItem.Click += adminToolStripMenuItem_Click;
             // 
             // sellerToolStripMenuItem
             // 
             sellerToolStripMenuItem.Name = "sellerToolStripMenuItem";
-            sellerToolStripMenuItem.Size = new Size(270, 34);
+            sellerToolStripMenuItem.Size = new Size(167, 34);
             sellerToolStripMenuItem.Text = "Seller";
             sellerToolStripMenuItem.Click += sellerToolStripMenuItem_Click;
             // 
@@ -174,6 +176,13 @@
             toolStripStatusLabel2.Size = new Size(179, 25);
             toolStripStatusLabel2.Text = "toolStripStatusLabel2";
             // 
+            // addProductToolStripMenuItem
+            // 
+            addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
+            addProductToolStripMenuItem.Size = new Size(270, 34);
+            addProductToolStripMenuItem.Text = "Add Product";
+            addProductToolStripMenuItem.Click += addProductToolStripMenuItem_Click;
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -217,5 +226,6 @@
         private ToolStripStatusLabel toolStripStatusLabel2;
         private ToolStripMenuItem adminToolStripMenuItem;
         private ToolStripMenuItem sellerToolStripMenuItem;
+        private ToolStripMenuItem addProductToolStripMenuItem;
     }
 }

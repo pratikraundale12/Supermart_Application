@@ -100,5 +100,11 @@ namespace SuperMart_App
             AddAdmin aaf = new AddAdmin();
             aaf.ShowDialog();
         }
+
+        private void addProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddProduct ap = new AddProduct();
+            ap.ShowDialog();
+        }
     }
 }
