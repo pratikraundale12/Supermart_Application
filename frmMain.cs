@@ -106,5 +106,17 @@ namespace SuperMart_App
             AddProduct ap = new AddProduct();
             ap.ShowDialog();
         }
+
+        private void sellingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SellingForm s = new SellingForm();
+            s.ShowDialog();
+        }
+
+        private void reportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SellingForm s = new SellingForm();
+            s.ShowDialog();
+        }
     }
 }
