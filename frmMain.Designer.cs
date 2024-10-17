@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            groupBox3 = new GroupBox();
-            SuperMart = new Label();
             menuStrip1 = new MenuStrip();
             categoryToolStripMenuItem = new ToolStripMenuItem();
             productToolStripMenuItem = new ToolStripMenuItem();
@@ -41,36 +40,14 @@
             reportToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
             eToolStripMenuItem = new ToolStripMenuItem();
-            label1 = new Label();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripStatusLabel2 = new ToolStripStatusLabel();
-            groupBox3.SuspendLayout();
+            imageList1 = new ImageList(components);
+            groupBox1 = new GroupBox();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // groupBox3
-            // 
-            groupBox3.BackColor = Color.DodgerBlue;
-            groupBox3.Controls.Add(SuperMart);
-            groupBox3.Location = new Point(0, 36);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(1171, 43);
-            groupBox3.TabIndex = 3;
-            groupBox3.TabStop = false;
-            groupBox3.Enter += groupBox3_Enter;
-            // 
-            // SuperMart
-            // 
-            SuperMart.AutoSize = true;
-            SuperMart.ForeColor = Color.White;
-            SuperMart.Location = new Point(514, 15);
-            SuperMart.Name = "SuperMart";
-            SuperMart.Size = new Size(95, 25);
-            SuperMart.TabIndex = 6;
-            SuperMart.Text = "SuperMart";
-            SuperMart.Click += SuperMart_Click_1;
             // 
             // menuStrip1
             // 
@@ -78,7 +55,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { categoryToolStripMenuItem, productToolStripMenuItem, addUserToolStripMenuItem, reportToolStripMenuItem, aboutToolStripMenuItem, eToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1171, 33);
+            menuStrip1.Size = new Size(1060, 33);
             menuStrip1.TabIndex = 4;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -113,14 +90,14 @@
             // adminToolStripMenuItem
             // 
             adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            adminToolStripMenuItem.Size = new Size(270, 34);
+            adminToolStripMenuItem.Size = new Size(167, 34);
             adminToolStripMenuItem.Text = "Admin";
             adminToolStripMenuItem.Click += adminToolStripMenuItem_Click;
             // 
             // sellerToolStripMenuItem
             // 
             sellerToolStripMenuItem.Name = "sellerToolStripMenuItem";
-            sellerToolStripMenuItem.Size = new Size(270, 34);
+            sellerToolStripMenuItem.Size = new Size(167, 34);
             sellerToolStripMenuItem.Text = "Seller";
             sellerToolStripMenuItem.Click += sellerToolStripMenuItem_Click;
             // 
@@ -136,6 +113,7 @@
             aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             aboutToolStripMenuItem.Size = new Size(78, 29);
             aboutToolStripMenuItem.Text = "About";
+            aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
             // 
             // eToolStripMenuItem
             // 
@@ -144,23 +122,13 @@
             eToolStripMenuItem.Text = "Exit";
             eToolStripMenuItem.Click += eToolStripMenuItem_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(465, 82);
-            label1.Name = "label1";
-            label1.Size = new Size(203, 25);
-            label1.TabIndex = 7;
-            label1.Text = "Welcome to home page";
-            // 
             // statusStrip1
             // 
             statusStrip1.ImageScalingSize = new Size(24, 24);
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripStatusLabel2 });
             statusStrip1.Location = new Point(0, 555);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(1171, 32);
+            statusStrip1.Size = new Size(1060, 32);
             statusStrip1.TabIndex = 8;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -176,14 +144,29 @@
             toolStripStatusLabel2.Size = new Size(179, 25);
             toolStripStatusLabel2.Text = "toolStripStatusLabel2";
             // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageSize = new Size(16, 16);
+            imageList1.TransparentColor = Color.Transparent;
+            // 
+            // groupBox1
+            // 
+            groupBox1.BackgroundImage = (Image)resources.GetObject("groupBox1.BackgroundImage");
+            groupBox1.Location = new Point(0, 29);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(1065, 534);
+            groupBox1.TabIndex = 9;
+            groupBox1.TabStop = false;
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1171, 587);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(1060, 587);
+            Controls.Add(groupBox1);
             Controls.Add(statusStrip1);
-            Controls.Add(label1);
-            Controls.Add(groupBox3);
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MinimizeBox = false;
@@ -191,8 +174,6 @@
             Text = "SuprtMart";
             FormClosing += frmMain_FormClosing;
             Load += frmMain_Load;
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             statusStrip1.ResumeLayout(false);
@@ -202,9 +183,6 @@
         }
 
         #endregion
-
-        private GroupBox groupBox3;
-        private Label SuperMart;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem categoryToolStripMenuItem;
         private ToolStripMenuItem productToolStripMenuItem;
@@ -212,12 +190,13 @@
         private ToolStripMenuItem reportToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
         private ToolStripMenuItem eToolStripMenuItem;
-        private Label label1;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripStatusLabel toolStripStatusLabel2;
         private ToolStripMenuItem adminToolStripMenuItem;
         private ToolStripMenuItem sellerToolStripMenuItem;
         private ToolStripMenuItem addProductToolStripMenuItem;
+        private ImageList imageList1;
+        private GroupBox groupBox1;
     }
 }

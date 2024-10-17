@@ -49,6 +49,20 @@ namespace SuperMart_App
         private void eToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            // Show a message box asking for confirmation to exit
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?",
+                                                  "Exit Confirmation",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Question);
+
+            // Check if the user selected "Yes"
+            if (result == DialogResult.Yes)
+            {
+                // Close the application if the user chooses to exit
+                Application.Exit();
+
+            }
+
         }
 
         private void toolStripStatusLabel2_Click(object sender, EventArgs e)
@@ -117,6 +131,12 @@ namespace SuperMart_App
         {
             SellingForm s = new SellingForm();
             s.ShowDialog();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About a1 = new About();
+            a1.ShowDialog();
         }
     }
 }

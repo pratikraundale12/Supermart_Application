@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuperMart_App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d0752e484a6057971db2d5182b26d60ef361add")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5828aaeb2c25fba6eb0508562e92a1e11915eeb2")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuperMart_App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuperMart_App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
