@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             groupBox2 = new GroupBox();
+            label3 = new Label();
             label1 = new Label();
             label2 = new Label();
             richTextBox1 = new RichTextBox();
-            label3 = new Label();
             label4 = new Label();
             richTextBox2 = new RichTextBox();
             groupBox1 = new GroupBox();
@@ -60,6 +60,17 @@
             groupBox2.Size = new Size(1005, 52);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.FlatStyle = FlatStyle.System;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(412, 9);
+            label3.Name = "label3";
+            label3.Size = new Size(173, 25);
+            label3.TabIndex = 2;
+            label3.Text = "About  Application";
             // 
             // label1
             // 
@@ -92,17 +103,6 @@
             richTextBox1.TabIndex = 3;
             richTextBox1.Text = resources.GetString("richTextBox1.Text");
             richTextBox1.TextChanged += richTextBox1_TextChanged;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.FlatStyle = FlatStyle.System;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(412, 9);
-            label3.Name = "label3";
-            label3.Size = new Size(173, 25);
-            label3.TabIndex = 2;
-            label3.Text = "About  Application";
             // 
             // label4
             // 
@@ -187,6 +187,7 @@
             Controls.Add(groupBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
+            MinimizeBox = false;
             Name = "About";
             Text = "About Developer";
             Load += About_Load;

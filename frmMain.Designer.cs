@@ -169,6 +169,7 @@
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             MinimizeBox = false;
             Name = "frmMain";
             Text = "SuprtMart";

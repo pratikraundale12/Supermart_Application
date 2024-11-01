@@ -100,6 +100,7 @@
             button2.TabIndex = 7;
             button2.Text = "Clear";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -175,9 +176,9 @@
             // 
             groupBox3.BackColor = Color.DodgerBlue;
             groupBox3.Controls.Add(SuperMart);
-            groupBox3.Location = new Point(-2, -22);
+            groupBox3.Location = new Point(-2, -18);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(748, 81);
+            groupBox3.Size = new Size(771, 77);
             groupBox3.TabIndex = 2;
             groupBox3.TabStop = false;
             // 

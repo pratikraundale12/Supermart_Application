@@ -60,6 +60,7 @@
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(611, 551);
             dataGridView1.TabIndex = 10;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.Click += dataGridView1_Click;
             // 
             // groupBox2

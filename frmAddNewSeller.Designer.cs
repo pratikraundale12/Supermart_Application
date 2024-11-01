@@ -239,6 +239,7 @@
             Controls.Add(groupBox3);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "frmAddNewSeller";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Add New Seller";
